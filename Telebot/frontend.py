@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import requests  # Import requests to call the backend
 
-# Replace with your Telegram bot token
+# Telegram bot token
 BOT_TOKEN = "8123283154:AAEun9YLdCc--enHywJMNgTu1M85HO6IS5Q"
 
 # Define backend URL
