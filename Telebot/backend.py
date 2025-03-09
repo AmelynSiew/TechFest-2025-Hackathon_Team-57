@@ -3,7 +3,7 @@ import google.generativeai as genai
 from serpapi import GoogleSearch
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyDiuTDSD33lLBuqgZyVfmtmmUtjO8PWoPA")  # Replace with your actual API key
+genai.configure(api_key="AIzaSyDiuTDSD33lLBuqgZyVfmtmmUtjO8PWoPA")
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -21,7 +21,7 @@ def search_web(query):
         "q": query,
         "hl": "en",
         "gl": "us",
-        "api_key": "8e47e68c2c7c6b68517c7d5be6243b84c3bf3b2ce203761eb8a2115fdb0e4e46"  # Replace with your actual SerpAPI key
+        "api_key": "8e47e68c2c7c6b68517c7d5be6243b84c3bf3b2ce203761eb8a2115fdb0e4e46"
     }
     search = GoogleSearch(params)
     results = search.get_dict()
